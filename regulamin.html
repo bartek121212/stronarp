@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pl-PL" class="scroll-smooth">
+    <head>
+    <title>SerwerRP</title>
+    <link rel="website icon" href="logo.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="output.css">
+        <style>
+        ::-webkit-scrollbar {
+              width: 10px;
+        }
+  
+        ::-webkit-scrollbar-track {
+              background: #363636;
+        }
+  
+        ::-webkit-scrollbar-thumb {
+              background: rgb(31, 31, 31);
+        }
+  
+        ::-webkit-scrollbar-thumb:hover {
+              background: #575757;
+        }
+      </style>
+    </head>
+<body class="animated 40s delay-150 transition-all bg-slate-950">
+  <header id="home" class=" text-white text-2xl">
+    <nav id="nav" class="relative flex flex-wrap items-center justify-between px-2 py-5">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
+          <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+            <a class="text-sm max-md:mt-5 max-lg:mt-5 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="dashboard.html">
+               NewCityRP
+            </a>
+            <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <svg class="rounded-full hover:bg-transparent cursor-pointer transition delay-150 duration-300 ease-in-out" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </button>
+          </div>
+          <div class="lg:flex items-center hidden" id="example-collapse-navbar">
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li class="nav-item">
+                <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="index.html">
+                  <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="px-3 py-2 flex items-center justify-center">
+                  <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><p id="options-button" class="text-xl font-bold cursor-pointer">Regulamin</p>
+                  </div>
+                <div class="flex justify-center items-center delay-150 transition-all absolute">
+                  <div id="options-menu" class="left-0 max-sm:w-40 w-60 rounded-md shadow-lg bg-slate-900 text-white font-bold text-xl ring-1 ring-black ring-opacity-5 z-10 hidden delay-150 transition-all">
+                    <div class="py-4 px-4" role="menu" aria-orientation="vertical" aria-labelledby="options-button">
+                        <a href="regulamin.html" class="delay-150 transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin</a>
+                        <div class="hover:bg-gray-100 delay-150 transition-all">
+                            <a href="regulamincrime.html" class="delay-150  transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin Crime</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="">
+                  <i class="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Discord</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="flex justify-center items-center delay-150 transition-all">
+        <div id="options-menu" class="left-0 w-56 rounded-md shadow-lg bg-slate-900 text-white font-bold text-xl ring-1 ring-black ring-opacity-5 z-10 hidden delay-150 transition-all">
+          <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-button">
+              <a href="regulamin.html" class="delay-150 transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin</a>
+              <div class="hover:bg-gray-100 delay-150 transition-all">
+                  <a href="regulamincrime.html" class="delay-150 transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin Crime</a>
+              </div>
+          </div>
+        </div>
+      </div>
+</header>
+<!--     <div class="absolute px-80 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 text-white py-10">
+        <h1 class="text-2xl font-bold">Regulamin</h1>
+    </div> -->
+    <div class="flex flex-row-reverse justify-between items-end flex-wrap gap-5 px-20 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 py-10 text-white max-sm:flex max-sm:justify-center">
+        <div class="flex gap-5 justify-end items-end flex-wrap">
+        <a href="index.html" class="font-medium text-white text-lg hover:text-blue-500 delay-150 transition-all">Strona Główna</a><p class="font-medium text-white text-lg">></p><a href="regulamin.html" class="font-medium text-white text-lg hover:text-blue-500 delay-150 transition-all">Regulamin</a>
+        </div>
+        <h1 class="text-2xl font-bold">Regulamin</h1>
+    </div>
+    <aside class="flex justify-end items-end flex-wrap mt-96">
+      <div class="flex justify-end items-end flex-wrap max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 px-10">
+        <a href="#home" class="fixed">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"/></svg>
+        </a>
+    </div>
+  </aside>
+    <main class="py-32 -mt-96 px-96 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+        <div class="bg-slate-900 py-20 rounded-xl border-2 border-blue-300">
+            <div class="flex flex-col justify-center items-center flex-wrap text-center">
+                <div class="flex justify-center flex-row-reverse py-10 gap-40 items-center flex-wrap">
+                    <img src="logo.png" class="rounded-full max-w-20">
+                    <h1 class="text-center text-4xl font-bold text-white">Regulamin SerwerRP</h1>
+                </div>
+                <div class="bg-blue-500 py-10 px-10 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 rounded-xl text-white">
+                    <p class="font-medium">Dziekujemy za odwiedzenie tej strony,Ogromna prosba jest to aby kazdy obywatel zapoznal sie z regulaminem dla lepszej rozgrywki.</p>
+                </div>
+                <div class="text-white py-10">
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10">( Stream Sniping) - Oglądanie transmisji osoby, która przebywa w tym samym momencie na serwerze</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10">( Stream Sniping) - Oglądanie transmisji osoby, która przebywa w tym samym momencie na serwerze</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10">( Stream Sniping) - Oglądanie transmisji osoby, która przebywa w tym samym momencie na serwerze</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10">( Stream Sniping) - Oglądanie transmisji osoby, która przebywa w tym samym momencie na serwerze</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10">( Stream Sniping) - Oglądanie transmisji osoby, która przebywa w tym samym momencie na serwerze</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">ZawartoscZawa</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <p class="text-start px-10">&.8ZawartoscZawac</p>
+                    <h2 class="font-bold text-2xl font-sans text-green-600">1.Punkt Crime</h2>
+                    <h2 class="text-blue-300 text-xl uppercase text-start">§5.1 Dołączenie do trwającej akcji RP</h2>
+                    <p class="text-start px-10 text-lg">ZawartoscZawa</p>
+                    <p class="text-start px-10 text-lg">&.8ZawartoscZawac</p>
+                    <div class="bg-blue-500 py-10 px-60 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 rounded-xl text-white mt-10">
+                      <p class="font-medium">© 2024 SerwerRP Wszelkie prawa zastrzeżone. Serwer by XXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="text-white py-4">
+      <div class="flex flex-row justify-between max-sm:px-0 px-20">
+        <a href="" class="font-bold text-lg text-white hover:text-blue-500 delay-150 transition-all">Regulamin</a>
+      </div>
+    </footer>
+      <script>
+        function toggleNavbar(collapseID){
+            document.getElementById(collapseID).classList.toggle("hidden");
+            document.getElementById(collapseID).classList.toggle("flex");
+        }
+        function revealElement(element, duration, delay, distance, origin) {
+  var initialOpacity = window.getComputedStyle(element).getPropertyValue('opacity');
+    element.style.opacity = '0';
+      setTimeout(function() {
+      element.style.transition = 'opacity ' + duration + 'ms';
+    element.style.opacity = initialOpacity;
+  }, delay);
+}
+  var animatedElements = document.getElementsByClassName('animated');
+  for (var i = 0; i < animatedElements.length; i++) {
+  revealElement(animatedElements[i], 1000, 500, '50px', 'bottom');
+}
+const button = document.querySelector('#options-button');
+const dropdown = document.querySelector('#options-menu');
+
+button.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+});
+document.addEventListener('click', (event) => {
+    if (!event.target.matches('#options-button') && !event.target.matches('#options-menu *')) {
+        dropdown.classList.add('hidden');
+    }
+});
+</script>
+</body>
+</html>

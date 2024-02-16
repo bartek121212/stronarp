@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Regulamin Dropdown</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Hover over the button to display the dropdown menu</h2>
+        <p class="mb-4">Move the mouse over the word "Regulamin":</p>
+        <div class="relative inline-block text-left">
+            <button id="options-button" class="bg-green-500 text-white font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="mr-2">Regulamin</span>
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </button>
+            <div id="options-menu" class="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-button">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin</a>
+                    <div class="hover:bg-gray-100 hover:text-gray-900">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Regulamin Crime</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+const button = document.querySelector('#options-button');
+const dropdown = document.querySelector('#options-menu');
+
+button.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+});
+
+const crimeLink = dropdown.querySelector('[href="#"]');
+
+crimeLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    dropdown.classList.add('hidden');
+});
+
+document.addEventListener('click', (event) => {
+    if (!event.target.matches('#options-button') && !event.target.matches('#options-menu *')) {
+        dropdown.classList.add('hidden');
+    }
+});
+    </script>
+</body>
+</html>

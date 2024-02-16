@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pl-PL" class="scroll-smooth">
+    <head>
+    <title>SerwerRP</title>
+    <link rel="website icon" href="logo.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="output.css">
+        <style>
+/*         body{
+            background: #131313;
+        } */
+/*         #footer{
+            background: #131313; 
+        } */
+        ::-webkit-scrollbar {
+              width: 10px;
+        }
+  
+        ::-webkit-scrollbar-track {
+              background: #363636;
+        }
+  
+        ::-webkit-scrollbar-thumb {
+              background: rgb(31, 31, 31);
+        }
+  
+        ::-webkit-scrollbar-thumb:hover {
+              background: #575757;
+        }
+        #img3{
+          transform: translateX(0px);
+          animation: float 6s ease-out infinite;
+        }
+        #img4{
+          transform: translateX(0px);
+          animation: float2 6s ease-out infinite;
+        }
+        #img5{
+          transform: translateX(0px);
+          animation: float3 3s ease-out infinite;
+        }
+        @keyframes float{
+          0%{
+            transform: translateX(0px);
+          }
+          50%{
+            transform:  translateY(-10px);
+          }
+          100%{
+            transform: translateX(0px);
+          }
+        }
+        @keyframes float2{
+          0%{
+            transform: translateX(0px);
+          }
+          50%{
+            transform:  translateY(-5px);
+          }
+          100%{
+            transform: translateX(0px);
+          }
+        }
+        @keyframes float3{
+          0%{
+            transform: translateX(0px);
+          }
+          10%{
+            transform: translateX(0px);
+          }
+          15%{
+            transform: translateX(0px);
+          }
+          20%{
+            transform: translateX(0px);
+          }
+          25%{
+            transform: translateX(0px);
+          }
+          30%{
+            transform: translateX(0px);
+          }
+          40%{
+            transform: translateX(0px);
+          }
+          50%{
+            transform:  translateY(-3px);
+          }
+          51%{
+            transform:  translateX(2px);
+          }
+          55%{
+            transform: translateY(3px);
+          }
+          60%{
+            transform: translateX(-3px);
+          }
+          70%{
+            transform: scale(0.9);
+          }
+          80%{
+            transform: scale(1.2);
+          }
+          100%{
+            transform: translateX(0px);
+          }
+        }
+        #box2{
+            box-shadow: 10px 25px 60px rgba(241, 234, 234, 0.2);
+        }
+/*         #box3{
+            box-shadow: 10px 25px 60px rgba(241, 234, 234, 0.2);
+        } */
+        #box4{
+            box-shadow: 10px 25px 60px rgba(241, 234, 234, 0.2);
+        }   
+        #box5{
+            box-shadow: 10px 25px 60px rgba(241, 234, 234, 0.2);
+            filter: drop-shadow(0px 0px 220px rgb(0, 102, 255));
+        }          
+        #nav{
+            box-shadow: 410px 0px 70px 0px rgb(0, 102, 255);
+        }
+        #img46{
+/*             filter: drop-shadow(5px 5px 20px rgb(0, 102, 255)); */
+            filter: drop-shadow(0px 0px 220px rgb(0, 102, 255));
+        }
+        #button24{
+            color:white;
+        }
+        #button24:hover{
+            background: transparent;
+            transition: all 500ms;
+        }
+        #shadoww{
+            filter: drop-shadow(0px 0px 150px rgb(0, 102, 255));
+        }
+        .boxik {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik.show {
+  opacity: 1;
+  transform: translateY(0);
+  
+} .boxik2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik3 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik3.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik4 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik4.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik5 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik5.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik6 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik6.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik7 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik7.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik8 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik8.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boxik9 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Add a class to the element to trigger the animation */
+.boxik9.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+      </style>
+    </head>
+<body class="animated 40s delay-150 transition-all bg-slate-950">
+  <header id="home" class=" text-white text-2xl">
+    <nav id="nav" class="relative flex flex-wrap items-center justify-between px-2 py-5">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-center">
+          <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+            <a class="text-sm max-md:mt-5 max-lg:mt-5 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="dashboard.html">
+               NewCityRP
+            </a>
+            <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <svg class="rounded-full hover:bg-transparent cursor-pointer transition delay-150 duration-300 ease-in-out" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </button>
+          </div>
+          <div class="lg:flex items-center hidden" id="example-collapse-navbar">
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li class="nav-item">
+                <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="index.html">
+                  <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="px-3 py-2 flex items-center justify-center">
+                  <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><p id="options-button" class="text-xl font-bold cursor-pointer">Regulamin</p>
+                  </div>
+                <div class="flex justify-center items-center delay-150 transition-all absolute">
+                  <div id="options-menu" class="left-0 max-sm:w-40 w-60 rounded-md shadow-lg bg-slate-900 text-white font-bold text-xl ring-1 ring-black ring-opacity-5 z-10 hidden delay-150 transition-all">
+                    <div class="py-4 px-4" role="menu" aria-orientation="vertical" aria-labelledby="options-button">
+                        <a href="regulamin.html" class="delay-150 transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin</a>
+                        <div class="hover:bg-gray-100 delay-150 transition-all">
+                            <a href="regulamincrime.html" class="delay-150  transition-all block px-4 py-2 text-lg text-gray-100 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Regulamin Crime</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="px-3 py-2 flex items-center text-xl  font-bold leading-snug text-white hover:text-blue-500 transition-all delay-150" href="">
+                  <i class="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span class="ml-2">Discord</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<main class="bg-cover text-white flex flex-col justify-center items-center flex-wrap">
+<!--   <div class="flex flex-col justify-center items-center flex-wrap bg-slate-800 w-72 max-sm:max-w-60 rounded-t-2xl rounded-r-full rounded-l-2xl hover:rounded-r-xl delay-500 transition-all">
+    <div class="py-20">
+      <div class="py-0 flex flex-col gap-5 skew-y-6 skew-x-6 hover:skew-y-0 hover:skew-x-0 transition-all delay-300 cursor-pointer ">
+        <h1 class="text-4xl font-bold text-center text-slate-300">Serwer RP</h1>
+        <div class="w-40 h-1 bg-blue-500"></div>
+        <p class="text-lg font-medium text-center text-slate-300">Twoj serwer!</p>
+        <div class="flex justify-center">
+          <a href="" class="px-2 py-2 bg-blue-500 rounded-xl hover:bg-blue-600 transition-all delay-150">Wpadnij!</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="border-b-2 border-blue-700 rounded w-full flex mt-0 items-center justify-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:p-0 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center">
+    <div class="px-40 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+      <img id="img46" src="zRNEK0K.png" class="max-w-lg max-sm:max-w-60">
+    </div>
+    <div id="shadoww" class="flex flex-col items-center -ml-60 max-sm:-ml-0 max-md:-ml-0 max-lg:-ml-0 max-xl:-ml-0 justify-center py-60 px-24 max-sm:px-0 max-sm:py-0 max-md:px-0 max-md:py-0 max-md:-mt-96 max-lg:px-0 max-lg:py-0 max-lg:-mt-96 max-xl:py-0 max-xl:px-0 max-xl:-mt-96 max-sm:rounded-none max-sm:-mt-72 w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+        <img id="img45" src="logo.png" class="max-w-40 rounded-full">
+        <div class="text-white text-center">
+            <h1 class="text-4xl font-bold">SerwerRP</h1>
+            <p class="text-xl font-medium">Serwer WL-OFF, oferujący fajną rozgrywke jak i miło spędzony czas.</p>
+           <div class="py-10 flex items-center justify-center max-sm:gap-2 max-sm:text-xl max-sm:flex-col">
+                <a id="button24" href="discordwasz" class="bg-blue-600 py-5 px-5 font-bold text-xl rounded-xl text-black hover:text-white hover:bg-transparent border-2 hover:border-indigo-200 hover:border-r-blue-500 border-t-blue-600 hover:border-b-blue-500  border-l-blue-600 delay-150 transition-all">Wpadnij do nas!</a>
+                <a id="img5" href="#article" class="py-5 px-5 font-medium text-xl rounded-xl hover:bg-transparent delay-150 transition-all">Zobacz poniżej!<span class="inline-block rotate-90 px-2">&#10148</span></a>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="px-5 mt-1 flex gap-2 max-sm:px-0 max-sm:gap-1">
+                    <svg className="" with="40" height="40" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="hover:opacity-65 cursor-pointer"
+                          fill-rule="evenodd"
+                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    <svg className="" with="40" height="40" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="hover:opacity-65 cursor-pointer"
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                        />
+                    </svg>
+                    <svg className="" with="40" height="40" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="hover:opacity-65 cursor-pointer"
+                          fill-rule="evenodd" 
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <svg className="h- w-" with="40" height="40" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="hover:opacity-65 cursor-pointer"
+                          fill-rule="evenodd"
+                          d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                </div>
+            </div>
+            <div class="">
+                <p class="-skew-x-6 text-xl font-bold">Serwa powstaly xx.xx.xxxx.</p>
+            </div>
+            </div>
+        </div>
+<!--                 <div class="flex justify-center items-center max-w-72 gap-20">
+            <div class="bg-slate-950 flex justify-center items-center text-white text-wrap flex-wrap">
+                <p>SerwerwerwSerwerwrw</p>
+            </div> 
+            <div class="bg-slate-950 flex justify-center items-center  text-white text-wrap flex-wrap">
+                <p>SerwerwerwSerwerwrw</p>
+            </div> 
+            <div class="bg-slate-950 flex justify-center items-center text-white text-wrap flex-wrap">
+                <p>SerwerwerwSerwerwrw</p>
+            </div> 
+        </div> -->
+    </div>
+</div>
+</main>
+<article id="article" class="py-40">
+  <div class="py-10 px-52 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+    <div class="px-10 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+      <div class="px-10 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0">
+        <div class="boxik">
+          <div class="flex flex-col py-20 gap-5 text-center text-white justify-center items-center">
+            <h1 class="text-2xl font-bold">Dlaczego warto nas odwiedzić?</h1>
+            <div class="w-40 h-1 bg-blue-500"></div>
+            <p  class="text-lg font-medium">Proszę poświęć nam tą chwilę</p>
+          </div>
+        </div>
+        <div class="flex justify-center gap-4 items-center flex-wrap">
+          <div class="boxik2">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxik3">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxik4">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxik5">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxik6">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxik7">
+            <div id="box3" class="flex flex-row justify-center items-center flex-wrap gap-20  px-0">
+              <div id="box4" class="text-white text-center flex flex-col justify-center items-center flex-wrap py-20 px-0 max-sm:px-0 bg-blue-500">
+                <div class="w-96 text-center max-sm:max-w-72">
+                  <div class="flex justify-center items-center flex-wrap -mt-10">
+                    <svg id="img3" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#C1C1C1;" d="M456.347,503.652c0,4.61-3.738,8.348-8.348,8.348H314.434c-4.61,0-8.348-3.738-8.348-8.348 s3.738-8.348,8.348-8.348h133.565C452.61,495.305,456.347,499.042,456.347,503.652z M281.043,495.305h-33.391 c-4.61,0-8.348,3.738-8.348,8.348s3.738,8.348,8.348,8.348h33.391c4.61,0,8.348-3.738,8.348-8.348S285.653,495.305,281.043,495.305z M105.405,118.33c1.629,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805 L81.114,70.429c-3.26-3.261-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805L105.405,118.33z M138.346,127.661 c-3.26-3.26-8.546-3.26-11.805,0c-3.26,3.26-3.26,8.546,0,11.805l68.695,68.695c1.63,1.63,3.767,2.445,5.902,2.445 c2.136,0,4.273-0.815,5.902-2.445c3.26-3.26,3.26-8.546,0-11.805L138.346,127.661z M81.115,133.392c-3.259-3.26-8.545-3.26-11.805,0 c-3.26,3.26-3.26,8.546,0,11.805l94.445,94.445c1.63,1.631,3.767,2.445,5.902,2.445c2.136,0,4.273-0.815,5.902-2.445 c3.26-3.26,3.26-8.546,0-11.805L81.115,133.392z"></path> <path style="fill:#CEA05D;" d="M22.26,505.48L6.52,489.739c-8.693-8.693-8.693-22.788,0-31.481l337.677-337.782l47.222,47.222 L53.742,505.48C45.049,514.174,30.954,514.174,22.26,505.48z"></path> <path style="fill:#99774F;" d="M396.985,161.763L53.742,505.48c-8.693,8.693-22.788,8.693-31.481,0L6.52,489.739 c-1.814-1.814-3.226-3.87-4.283-6.056c8.291,4.009,18.546,2.597,25.425-4.283l343.243-343.718L396.985,161.763z"></path> <path style="fill:#5B7A7F;" d="M511.999,384L511.999,384c0,15.368-12.458,27.826-27.826,27.826h-5.565l-14.866,89.195 c-1.056,6.335-6.537,10.979-12.96,10.979s-11.904-4.644-12.96-10.979l-14.866-89.195h-5.565c-15.368,0-27.826-12.458-27.826-27.826 l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783C499.541,356.174,511.999,368.633,511.999,384z M466.128,242.12l39.352-39.352 c8.694-8.694,8.694-22.788,0-31.481L388.983,54.789c-1.036-1.037-2.173-1.969-3.393-2.781L316.132,5.701 c-13.462-8.974-31.388-7.2-42.829,4.241l0,0c-11.441,11.441-13.216,29.367-4.241,42.829l46.305,69.458 c0.814,1.22,1.745,2.356,2.781,3.393L434.646,242.12C443.339,250.814,457.434,250.814,466.128,242.12z"></path> <path style="fill:#769CA5;" d="M467.064,209.702L350.566,93.204c-1.036-1.037-1.968-2.174-2.781-3.393L301.48,20.353 c-4.118-6.177-5.946-13.294-5.642-20.294c7-0.304,14.117,1.524,20.294,5.642l69.458,46.306c1.22,0.813,2.356,1.744,3.393,2.781 L505.48,171.287c8.694,8.694,8.694,22.788,0,31.481l-6.934,6.934C489.851,218.396,475.757,218.396,467.064,209.702z M484.173,356.174h-66.783c-15.368,0-27.826,12.458-27.826,27.826l0,0c0,15.368,12.458,27.826,27.826,27.826h66.783 c15.368,0,27.826-12.458,27.826-27.826l0,0C511.999,368.633,499.541,356.174,484.173,356.174z"></path> <path style="fill:#90B5BF;" d="M511.999,384L511.999,384c0,1.907-0.193,3.767-0.558,5.565H390.122 c-0.365-1.799-0.558-3.66-0.558-5.565l0,0c0-15.368,12.458-27.826,27.826-27.826h66.783 C499.541,356.174,511.999,368.633,511.999,384z"></path> </g></svg>
+                  </div>
+                  <h1 class="text-2xl font-bold">Developerzy</h1>
+                  <p class="text-xl font-medium">Stawiamy na developerow ktorzy beda wstanie robic jak najwiecej dla graczy!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<section id="box3" class="py-32 px-60 max-sm:px-0 max-md:px-10 max-lg:px-10 max-xl:px-10">
+  <div id="box5" class="text-white text-center rounded-xl"> 
+    <div class="boxik8">
+      <div class="flex flex-col py-10 justify-center items-center">
+        <h1 class="text-4xl font-bold py-5">Statystyki:</h1>
+        <div class="h-1 w-40 bg-blue-500"></div>
+      </div>
+      <div class="boxik9">
+        <div class="flex justify-center gap-0 items-center flex-wrap max-sm:gap-10 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 bg-blue-500 rounded-lg">
+          <div class="flex justify-end items-center flex-wrap gap-5 py-5 px-32 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 text-center">
+            <svg id="img4" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z" fill="#ffffff"></path> </g></svg>
+            <div class="flex flex-col justify-center items-center flex-wrap">
+              <h1 id="serv" class="text-2xl font-bold">0/64</h1>
+              <p class="text-lg font-medium">Użytkowników</p>
+            </div>
+          </div>
+          <div class="flex justify-end items-center flex-wrap gap-5 py-5 px-32 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 text-center">
+            <svg id="img4" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z" fill="#ffffff"></path> </g></svg>
+            <div class="flex flex-col justify-center items-center flex-wrap">
+              <h1 id="serv" class="text-2xl font-bold">0/64</h1>
+              <p class="text-lg font-medium">Użytkowników</p>
+            </div>
+          </div>
+          <div class="flex justify-end items-center flex-wrap gap-5 py-5 px-32 max-sm:px-0 max-md:px-0 max-lg:px-0 max-xl:px-0 text-center">
+            <svg id="img4" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z" fill="#ffffff"></path> </g></svg>
+            <div class="flex flex-col justify-center items-center flex-wrap">
+              <h1 id="serv" class="text-2xl font-bold">0/64</h1>
+              <p class="text-lg font-medium">Użytkowników</p>
+            </div>
+          </div>
+          <!--  miejsce na podpiecie status -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="text-white py-4">
+  <div class="flex flex-row-reverse justify-between max-sm:px-0 px-20">
+    <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"/></svg>
+    </a>
+    <div class="flex justify-start items-start gap-10"><!-- <h1 class="text-lg font-bold">SerwerRP@CopyRight2024</h1> --><a href="regulamin.html" class="font-bold hover:text-blue-500 delay-150 transition-all text-lg">Regulamin</a></div>
+</div>
+</footer>
+<script>
+function toggleNavbar(collapseID){
+  document.getElementById(collapseID).classList.toggle("hidden");
+  document.getElementById(collapseID).classList.toggle("flex");
+}
+function revealElement(element, duration, delay, distance, origin) {
+  var initialOpacity = window.getComputedStyle(element).getPropertyValue('opacity');
+    element.style.opacity = '0';
+      setTimeout(function() {
+      element.style.transition = 'opacity ' + duration + 'ms';
+    element.style.opacity = initialOpacity;
+  }, delay);
+}
+  var animatedElements = document.getElementsByClassName('animated');
+  for (var i = 0; i < animatedElements.length; i++) {
+  revealElement(animatedElements[i], 1000, 500, '50px', 'bottom');
+}
+const button = document.querySelector('#options-button');
+const dropdown = document.querySelector('#options-menu');
+
+button.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+});
+
+document.addEventListener('click', (event) => {
+    if (!event.target.matches('#options-button') && !event.target.matches('#options-menu *')) {
+        dropdown.classList.add('hidden');
+    }
+});
+const element = document.querySelector('.boxik');
+const element2 = document.querySelector('.boxik2');
+const element3 = document.querySelector('.boxik3');
+const element4 = document.querySelector('.boxik4');
+const element5 = document.querySelector('.boxik5');
+const element6 = document.querySelector('.boxik6');
+const element7 = document.querySelector('.boxik7');
+const element8 = document.querySelector('.boxik8');
+const element9 = document.querySelector('.boxik9');
+
+// Define the options for the Intersection Observer
+const options = {
+  root: null,
+  rootMargin: '100px',
+  threshold: 1.0
+};
+
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element.classList.add('show');
+    }
+/*     else {
+      element.classList.remove('show');
+    } */
+  });
+}, options);
+const observer2 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element2.classList.add('show');
+    }
+/*     else {
+      element2.classList.remove('show');
+    } */
+  });
+}, options);
+const observer3 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element3.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer4 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element4.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer5 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element5.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer6 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element6.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer7 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element7.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer8 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element8.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+const observer9 = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    // If element is in viewport, add the 'show' class to trigger the animation
+    if (entry.isIntersecting) {
+      element9.classList.add('show');
+    }
+/*     else {
+      element3.classList.remove('show');
+    } */
+  });
+}, options);
+// Start observing the element
+observer.observe(element);
+observer2.observe(element2);
+observer3.observe(element3);
+observer4.observe(element4);
+observer5.observe(element5);
+observer6.observe(element6);
+observer7.observe(element7);
+observer8.observe(element8);
+observer9.observe(element9);
+</script>
+</body>
+</html>
+<!-- https://mrucznik-rp.pl/topic/15869-rendery-z-gta-v-wektorowe-full-hd/ Franklin zdj niby udostepnione mozna uzywac -->
